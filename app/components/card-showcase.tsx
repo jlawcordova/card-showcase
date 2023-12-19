@@ -4,6 +4,12 @@ import { useState } from "react";
 import lerp from "../lib/lerp";
 import { hypothenuse } from "../lib/hypothenuse";
 
+interface TCGCardAppearance {
+  rotation: Rotation;
+  translate: Translate;
+  shine: Shine;
+}
+
 interface Rotation {
   x: number;
   y: number;
@@ -27,6 +33,23 @@ export default function CardShowcase({
 }: {
   children: React.ReactNode;
 }) {
+  const [appearance, setAppearance] = useState<TCGCardAppearance>({
+    rotation: {
+      x: 0,
+      y: 0,
+      z: 0,
+      a: 0,
+    },
+    translate: {
+      x: 0,
+      y: 0,
+      z: 0,
+    },
+    shine: {
+      rotation: 0,
+      strength: 0,
+    },
+  });
   const [translate, setTranslate] = useState<Translate>({
     x: 0,
     y: 0,
@@ -42,11 +65,26 @@ export default function CardShowcase({
     rotation: 0,
     strength: 0,
   });
-  const [shineRotation, setShineRotation] = useState(0);
-  const [shineStrength, setShineStrength] = useState(0.2);
 
   const handleMouseLeave = () => {
     // Reset values on leave
+    setAppearance({
+      rotation: {
+        x: 0,
+        y: 0,
+        z: 0,
+        a: 0,
+      },
+      translate: {
+        x: 0,
+        y: 0,
+        z: 0,
+      },
+      shine: {
+        rotation: 0,
+        strength: 0,
+      },
+    });
     setTranslate({
       x: 0,
       y: 0,
@@ -79,11 +117,10 @@ export default function CardShowcase({
     const centerXOffset = localX - width / 2;
     const centerYOffset = localY - height / 2;
 
-    // x axis of rotation is based on how far the mouse is horizontally
-    // from the center of the element. y axis of rotation is based on how
-    // far the mouse is vertically from the center of the element.
-    const x = centerYOffset / (height / 2);
-    const y = -centerXOffset / (width / 2);
+    // x and y axis of rotation are based on how far the mouse is vertically
+    // and horizontally from the center of the element, respectively.
+    const x = lerp(0, 1, centerYOffset / (height / 2));
+    const y = lerp(0, 1, -centerXOffset / (width / 2));
     // angle of rotation is a based on how far the mouse is from the center
     // of the element. The further away, the more rotation.
     const a = lerp(
@@ -92,18 +129,18 @@ export default function CardShowcase({
       hypothenuse(centerXOffset, centerYOffset) /
         hypothenuse(width / 2, height / 2)
     );
-    setRotation({
+    const rotation = {
       x: x,
       y: y,
       z: 0,
       a: a,
-    });
+    };
 
-    setTranslate({
+    const translate = {
       x: 0,
       y: 0,
       z: zTranslateMaxStrength,
-    });
+    };
 
     // The shine strength is based on how far the mouse is from the center.
     const shineXStrength = lerp(
@@ -116,14 +153,19 @@ export default function CardShowcase({
       shineYMaxStrength,
       Math.abs(centerYOffset / (height / 2))
     );
-
     // The shine should be opposite to where the mouse is.
     const shineRotation =
       Math.atan2(centerYOffset, centerXOffset) + Math.PI / 2;
     const shineStrength = shineXStrength + shineYStrength;
-    setShine({
+    const shine = {
       rotation: shineRotation,
       strength: shineStrength,
+    };
+
+    setAppearance({
+      rotation: rotation,
+      translate: translate,
+      shine: shine,
     });
   };
 
@@ -133,7 +175,7 @@ export default function CardShowcase({
         style={{
           transform: `
             perspective(${600}px)
-            translateZ(${translate.z}px)`,
+            translateZ(${appearance.translate.z}px)`,
         }}
       >
         <div
@@ -143,10 +185,10 @@ export default function CardShowcase({
             transform: `
               perspective(${600}px)
               rotate3d(
-                ${rotation.x},
-                ${rotation.y},
-                ${rotation.z}, 
-                ${rotation.a}deg
+                ${appearance.rotation.x},
+                ${appearance.rotation.y},
+                ${appearance.rotation.z}, 
+                ${appearance.rotation.a}deg
               )`,
             transitionProperty: "transform",
             transitionDuration: "2s",
@@ -159,9 +201,9 @@ export default function CardShowcase({
             className=" absolute top-0 left-0 w-full h-full"
             style={{
               background: `linear-gradient(
-            ${shine.rotation}rad,
-            rgba(255, 255, 255, ${shine.strength}) 0%,
-            rgba(255, 255, 255, ${shine.strength}) 5%,
+            ${appearance.shine.rotation}rad,
+            rgba(255, 255, 255, ${appearance.shine.strength}) 0%,
+            rgba(255, 255, 255, ${appearance.shine.strength}) 5%,
             rgba(255, 255, 255, 0) 80%
           )`,
             }}
