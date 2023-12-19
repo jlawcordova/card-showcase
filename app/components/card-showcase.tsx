@@ -50,21 +50,6 @@ export default function CardShowcase({
       strength: 0,
     },
   });
-  const [translate, setTranslate] = useState<Translate>({
-    x: 0,
-    y: 0,
-    z: 0,
-  });
-  const [rotation, setRotation] = useState<Rotation>({
-    x: 0,
-    y: 0,
-    z: 0,
-    a: 0,
-  });
-  const [shine, setShine] = useState<Shine>({
-    rotation: 0,
-    strength: 0,
-  });
 
   const handleMouseLeave = () => {
     // Reset values on leave
@@ -85,21 +70,6 @@ export default function CardShowcase({
         strength: 0,
       },
     });
-    setTranslate({
-      x: 0,
-      y: 0,
-      z: 0,
-    });
-    setRotation({
-      x: 0,
-      y: 0,
-      z: 0,
-      a: 0,
-    });
-    setShine({
-      rotation: 0,
-      strength: 0,
-    });
   };
 
   const handleMouseMove = (event: React.MouseEvent) => {
@@ -108,7 +78,7 @@ export default function CardShowcase({
     const shineXMaxStrength = 0.1;
     const shineYMaxStrength = 0.25;
 
-    // 👇 Get mouse position relative to element
+    // Get mouse position relative to element
     const localX = event.nativeEvent.offsetX;
     const localY = event.nativeEvent.offsetY;
     const width = event.currentTarget.clientWidth;
@@ -201,11 +171,11 @@ export default function CardShowcase({
             className=" absolute top-0 left-0 w-full h-full"
             style={{
               background: `linear-gradient(
-            ${appearance.shine.rotation}rad,
-            rgba(255, 255, 255, ${appearance.shine.strength}) 0%,
-            rgba(255, 255, 255, ${appearance.shine.strength}) 5%,
-            rgba(255, 255, 255, 0) 80%
-          )`,
+                ${appearance.shine.rotation}rad,
+                rgba(255, 255, 255, ${appearance.shine.strength}) 0%,
+                rgba(255, 255, 255, ${appearance.shine.strength}) 5%,
+                rgba(255, 255, 255, 0) 80%
+              )`,
             }}
           ></div>
         </div>
