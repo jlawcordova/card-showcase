@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import lerp from "../lib/lerp";
-import { hypothenuse } from "../lib/hypothenuse";
+import lerp from "../common/lerp";
+import { hypothenuse } from "../common/hypothenuse";
 
-interface TCGCardAppearance {
+interface ShinyCardAppearance {
   rotation: Rotation;
   translate: Translate;
   shine: Shine;
@@ -28,12 +28,8 @@ interface Shine {
   strength: number;
 }
 
-export default function CardShowcase({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [appearance, setAppearance] = useState<TCGCardAppearance>({
+export default function ShinyCard({ children }: { children: React.ReactNode }) {
+  const [appearance, setAppearance] = useState<ShinyCardAppearance>({
     rotation: {
       x: 0,
       y: 0,
