@@ -4,31 +4,19 @@ import { useState } from "react";
 import lerp from "../common/lerp";
 import { hypothenuse } from "../common/hypothenuse";
 
-interface ShinyCardAppearance {
-  rotation: Rotation;
-  translate: Translate;
-  shine: Shine;
-}
-
-interface Rotation {
-  x: number;
-  y: number;
-  z: number;
-  a: number;
-}
-
-interface Translate {
-  x: number;
-  y: number;
-  z: number;
-}
-
-interface Shine {
-  rotation: number;
-  strength: number;
-}
-
-export default function ShinyCard({ children }: { children: React.ReactNode }) {
+export default function ShinyCard({
+  children,
+  zTranslateMaxStrength = 16,
+  rotationMaxStrength = 6,
+  shineXMaxStrength = 0.1,
+  shineYMaxStrength = 0.25,
+}: {
+  children: React.ReactNode;
+  zTranslateMaxStrength: number;
+  rotationMaxStrength: number;
+  shineXMaxStrength: number;
+  shineYMaxStrength: number;
+}) {
   const [appearance, setAppearance] = useState<ShinyCardAppearance>({
     rotation: {
       x: 0,
@@ -69,11 +57,6 @@ export default function ShinyCard({ children }: { children: React.ReactNode }) {
   };
 
   const handleMouseMove = (event: React.MouseEvent) => {
-    const rotationMaxStrength = 6;
-    const zTranslateMaxStrength = 16;
-    const shineXMaxStrength = 0.1;
-    const shineYMaxStrength = 0.25;
-
     // Get mouse position relative to element
     const localX = event.nativeEvent.offsetX;
     const localY = event.nativeEvent.offsetY;
