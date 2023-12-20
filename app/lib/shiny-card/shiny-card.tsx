@@ -12,10 +12,10 @@ export default function ShinyCard({
   shineYMaxStrength = 0.25,
 }: {
   children: React.ReactNode;
-  zTranslateMaxStrength: number;
-  rotationMaxStrength: number;
-  shineXMaxStrength: number;
-  shineYMaxStrength: number;
+  zTranslateMaxStrength?: number;
+  rotationMaxStrength?: number;
+  shineXMaxStrength?: number;
+  shineYMaxStrength?: number;
 }) {
   const [appearance, setAppearance] = useState<ShinyCardAppearance>({
     rotation: {

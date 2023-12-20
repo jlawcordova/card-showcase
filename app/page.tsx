@@ -10,7 +10,7 @@ export default function Home() {
       style={{ backgroundImage: "url('/backgrounds/grey-pattern.png')" }}
     >
       <div className="mb-16 flex gap-8">
-        <ShinyCard>
+        <ShinyCard rotationMaxStrength={12}>
           <Image src={Trainer} alt="Jello Cornetto Trainer Card"></Image>
         </ShinyCard>
         <table className="table">
