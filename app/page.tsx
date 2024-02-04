@@ -49,11 +49,8 @@ export default async function Home() {
   });
 
   const wishlistCards: TradeCard[] = wishlistServerCards.map((c) => {
-    const wishlist = Wishlist.find((w) => w.id === c.id);
-
     return {
       card: c,
-      quantity: wishlist?.quantity,
     };
   });
 
