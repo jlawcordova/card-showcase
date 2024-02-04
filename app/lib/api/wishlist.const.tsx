@@ -45,6 +45,6 @@ export const Wishlist = [
   },
   {
     name: "Superior Energy Retrieval",
-    id: "sm35-59",
+    id: "sv2-189",
   },
 ];
