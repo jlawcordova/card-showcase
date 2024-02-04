@@ -3,7 +3,13 @@ import ShinyCard from "../lib/shiny-card/shiny-card";
 import { TradeCard } from "./trade-card.interface";
 import CardMarketLogo from "../assets/card-market.png";
 
-export default function Card({ tradeCard }: { tradeCard: TradeCard }) {
+export default function Card({
+  tradeCard,
+  quantityText = "Available",
+}: {
+  tradeCard: TradeCard;
+  quantityText?: string;
+}) {
   const card = tradeCard.card;
 
   if (!card) {
@@ -34,7 +40,7 @@ export default function Card({ tradeCard }: { tradeCard: TradeCard }) {
       <p>{card.rarity}</p>
       {tradeCard.quantity && (
         <p className="mt-2 text-sm text-[#FFF56D]">
-          {tradeCard.quantity} Available
+          {tradeCard.quantity} {quantityText}
         </p>
       )}
       {/* <Image src={CardMarketLogo} alt="" width={24} height={24} />

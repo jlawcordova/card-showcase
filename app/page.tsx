@@ -4,6 +4,7 @@ import { ForTrade } from "./lib/api/for-trade.const";
 import { TradeCard } from "./components/trade-card.interface";
 import Heading1 from "./components/heading-1";
 import { Wishlist } from "./lib/api/wishlist.const";
+import Heading2 from "./components/heading-2";
 
 export default async function Home() {
   const cardSearchParams = new URLSearchParams();
@@ -19,7 +20,10 @@ export default async function Home() {
   const cards = response.data as ICard[];
 
   const wishlistParams = new URLSearchParams();
-  const qWishlist = Wishlist.map((card) => `id:${card.id}`).join(" OR ");
+  const qWishlist = Wishlist.map((w) => w.content)
+    .flat()
+    .map((card) => `id:${card.id}`)
+    .join(" OR ");
   wishlistParams.append("q", qWishlist);
   wishlistParams.append("orderBy", "-set.releaseDate,number");
 
@@ -48,11 +52,34 @@ export default async function Home() {
     };
   });
 
-  const wishlistCards: TradeCard[] = wishlistServerCards.map((c) => {
+  const wishlistCards: {
+    id: string;
+    section: string;
+    description: string;
+    content: TradeCard[];
+  }[] = Wishlist.map((w) => {
+    const content = w.content.map((c) => {
+      const card = wishlistServerCards.find((wc) => wc.id === c.id);
+
+      return {
+        card: card,
+        quantity: c?.quantity ?? 0,
+      };
+    });
+
     return {
-      card: c,
+      id: w.id,
+      section: w.name,
+      description: w.description,
+      content: content,
     };
   });
+
+  // wishlistServerCards.map((c) => {
+  //   return {
+  //     card: c,
+  //   };
+  // });
 
   return (
     <main>
@@ -87,19 +114,25 @@ export default async function Home() {
         }}
       >
         <div className="px-8 lg:px-48 pb-16">
-          <div className="py-8">
+          <div className="pt-8">
             <Heading1>Wishlist</Heading1>
           </div>
-          <div className="gap-4 gap-y-12 lg:gap-12 lg:gap-y-14 flex flex-wrap justify-start">
-            {wishlistCards?.map((wishlistCard, i) => (
-              <div
-                key={wishlistCard?.card?.id}
-                className="w-[calc(50%-0.5rem)] lg:w-[calc(25%-2.25rem)]"
-              >
-                <Card tradeCard={wishlistCard} />
+          {wishlistCards?.map((wishlistCard, i) => (
+            <div key={wishlistCard.id}>
+              <Heading2>{wishlistCard.section}</Heading2>
+              <p className="mb-6">{wishlistCard.description}</p>
+              <div className="mb-16 gap-4 gap-y-12 lg:gap-12 lg:gap-y-14 flex flex-wrap justify-start">
+                {wishlistCard.content?.map((card, i) => (
+                  <div
+                    key={card?.card?.id}
+                    className="w-[calc(50%-0.5rem)] lg:w-[calc(25%-2.25rem)]"
+                  >
+                    <Card tradeCard={card} quantityText="Piece(s)" />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </main>
