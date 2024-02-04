@@ -119,19 +119,18 @@ export default function ShinyCard({
   };
 
   return (
-    <div className="p-4 rounded-[2.5rem] bg-white">
-      <div
-        style={{
-          transform: `
+    <div
+      style={{
+        transform: `
             perspective(${600}px)
             translateZ(${appearance.translate.z}px)`,
-        }}
-      >
-        <div
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-          style={{
-            transform: `
+      }}
+    >
+      <div
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          transform: `
               perspective(${600}px)
               rotate3d(
                 ${appearance.rotation.x},
@@ -139,25 +138,24 @@ export default function ShinyCard({
                 ${appearance.rotation.z}, 
                 ${appearance.rotation.a}deg
               )`,
-            transitionProperty: "transform",
-            transitionDuration: "2s",
-            // Rotates fast at first, then really slows down.
-            transitionTimingFunction: "cubic-bezier(.05,.69,.17,.97)",
-          }}
-        >
-          {children}
-          <div
-            className=" absolute top-0 left-0 w-full h-full"
-            style={{
-              background: `linear-gradient(
+          transitionProperty: "transform",
+          transitionDuration: "2s",
+          // Rotates fast at first, then really slows down.
+          transitionTimingFunction: "cubic-bezier(.05,.69,.17,.97)",
+        }}
+      >
+        {children}
+        <div
+          className=" absolute top-0 left-0 w-full h-full"
+          style={{
+            background: `linear-gradient(
                 ${appearance.shine.rotation}rad,
                 rgba(255, 255, 255, ${appearance.shine.strength}) 0%,
                 rgba(255, 255, 255, ${appearance.shine.strength}) 5%,
                 rgba(255, 255, 255, 0) 80%
               )`,
-            }}
-          ></div>
-        </div>
+          }}
+        ></div>
       </div>
     </div>
   );
