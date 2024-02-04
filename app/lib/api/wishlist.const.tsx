@@ -40,7 +40,11 @@ export const Wishlist = [
     id: "sv2-61",
   },
   {
-    name: "Chien-pao ex",
-    id: "sv2-61",
+    name: "PokéStop",
+    id: "pgo-68",
+  },
+  {
+    name: "Superior Energy Retrieval",
+    id: "sm35-59",
   },
 ];
