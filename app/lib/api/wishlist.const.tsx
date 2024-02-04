@@ -39,4 +39,8 @@ export const Wishlist = [
     name: "Chien-pao ex",
     id: "sv2-61",
   },
+  {
+    name: "Chien-pao ex",
+    id: "sv2-61",
+  },
 ];

@@ -1,9 +1,9 @@
 export const ForTrade = [
-  // {
-  //   name: "SIR Clive",
-  //   id: "sv4pt5-236",
-  //   quantity: 1,
-  // },
+  {
+    name: "SIR Clive",
+    id: "sv4pt5-236",
+    quantity: 1,
+  },
   {
     name: "FA Clive",
     id: "sv4pt5-227",
@@ -24,6 +24,11 @@ export const ForTrade = [
   //   id: "sv4pt5-90",
   //   quantity: 2,
   // },
+  {
+    name: "Gold Counter Catcher",
+    id: "sv4-264",
+    quantity: 1,
+  },
   {
     name: "IR Dottler",
     id: "sv4-184",
@@ -49,11 +54,11 @@ export const ForTrade = [
     id: "sv2-245",
     quantity: 1,
   },
-  // {
-  //   name: "FA Ting-Lu ex",
-  //   id: "sv2-243",
-  //   quantity: 1,
-  // },
+  {
+    name: "FA Ting-Lu ex",
+    id: "sv2-243",
+    quantity: 1,
+  },
   {
     name: "FA Forretress ex",
     id: "sv2-230",
@@ -62,6 +67,16 @@ export const ForTrade = [
   {
     name: "Ting-Lu ex",
     id: "sv2-127",
+    quantity: 1,
+  },
+  {
+    name: "Skeledirge ex",
+    id: "sv2-37",
+    quantity: 1,
+  },
+  {
+    name: "Quaquaval ex",
+    id: "sv2-52",
     quantity: 1,
   },
   {
