@@ -19,11 +19,11 @@ export const ForTrade = [
     id: "sv4pt5-5",
     quantity: 1,
   },
-  {
-    name: "TM: Crisis Punch",
-    id: "sv4pt5-90",
-    quantity: 2,
-  },
+  // {
+  //   name: "TM: Crisis Punch",
+  //   id: "sv4pt5-90",
+  //   quantity: 2,
+  // },
   {
     name: "IR Dottler",
     id: "sv4-184",
