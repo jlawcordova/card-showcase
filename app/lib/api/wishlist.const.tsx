@@ -20,6 +20,11 @@ export const Wishlist = [
         id: "sv2-189",
         quantity: 2,
       },
+      {
+        name: "Iron Hands ex",
+        id: "sv4-70",
+        quantity: 1,
+      },
     ],
   },
   {
@@ -34,8 +39,8 @@ export const Wishlist = [
         quantity: 1,
       },
       {
-        name: "Iron Hands ex",
-        id: "sv4-70",
+        name: "Raichu V",
+        id: "swsh9-45",
         quantity: 2,
       },
       {
@@ -43,44 +48,34 @@ export const Wishlist = [
         id: "swsh9-48",
         quantity: 1,
       },
-      {
-        name: "Raichu V",
-        id: "swsh9-45",
-        quantity: 2,
-      },
     ],
   },
-  {
-    id: "3",
-    name: "Would Be Happy With",
-    description:
-      "I am not in a rush for these cards. Open to trading, but priority is on actively sought-after cards.",
-    content: [
-      {
-        name: "Shiny Skwovet",
-        id: "sv4pt5-205",
-        quantity: 1,
-      },
-      {
-        name: "Radiant Sneasler",
-        id: "swsh11-123",
-        quantity: 1,
-      },
-      {
-        name: "Shiny Glimmora ex",
-        id: "sv4pt5-218",
-        quantity: 1,
-      },
-      {
-        name: "Shiny Glimmet",
-        id: "sv4pt5-179",
-        quantity: 4,
-      },
-      {
-        name: "shiny Squawk",
-        id: "sv4pt5-223",
-        quantity: 1,
-      },
-    ],
-  },
+  // {
+  //   id: "3",
+  //   name: "Would Be Happy With",
+  //   description:
+  //     "I am not in a rush for these cards. Open to trading, but priority is on actively sought-after cards.",
+  //   content: [
+  //     {
+  //       name: "Shiny Skwovet",
+  //       id: "sv4pt5-205",
+  //       quantity: 1,
+  //     },
+  //     {
+  //       name: "Radiant Sneasler",
+  //       id: "swsh11-123",
+  //       quantity: 1,
+  //     },
+  //     {
+  //       name: "Shiny Glimmet",
+  //       id: "sv4pt5-179",
+  //       quantity: 4,
+  //     },
+  //     {
+  //       name: "Shiny Squawk",
+  //       id: "sv4pt5-223",
+  //       quantity: 1,
+  //     },
+  //   ],
+  // },
 ];

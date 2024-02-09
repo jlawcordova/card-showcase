@@ -9,21 +9,26 @@ export const ForTrade = [
     id: "sv4pt5-227",
     quantity: 1,
   },
-  {
-    name: "Shiny Ditto",
-    id: "sv4pt5-201",
-    quantity: 1,
-  },
+  // {
+  //   name: "Shiny Ditto",
+  //   id: "sv4pt5-201",
+  //   quantity: 1,
+  // },
   {
     name: "Toedscruel ex",
     id: "sv4pt5-5",
     quantity: 1,
   },
-  // {
-  //   name: "TM: Crisis Punch",
-  //   id: "sv4pt5-90",
-  //   quantity: 2,
-  // },
+  {
+    name: "Shiny Glimmora ex",
+    id: "sv4pt5-218",
+    quantity: 1,
+  },
+  {
+    name: "TM: Crisis Punch",
+    id: "sv4pt5-90",
+    quantity: 2,
+  },
   {
     name: "Gold Counter Catcher",
     id: "sv4-264",
@@ -83,5 +88,10 @@ export const ForTrade = [
     name: "Wo-chien ex",
     id: "sv2-27",
     quantity: 1,
+  },
+  {
+    name: "Jet Energy",
+    id: "sv2-190",
+    quantity: 3,
   },
 ];
