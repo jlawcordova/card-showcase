@@ -20,11 +20,6 @@ export const Wishlist = [
         id: "sv2-189",
         quantity: 2,
       },
-      {
-        name: "Iron Hands ex",
-        id: "sv4-70",
-        quantity: 1,
-      },
     ],
   },
   {
@@ -46,6 +41,11 @@ export const Wishlist = [
       {
         name: "Raikou V",
         id: "swsh9-48",
+        quantity: 1,
+      },
+      {
+        name: "Iron Hands ex",
+        id: "sv4-70",
         quantity: 1,
       },
     ],

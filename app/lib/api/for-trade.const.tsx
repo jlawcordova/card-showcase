@@ -19,11 +19,11 @@ export const ForTrade = [
     id: "sv4pt5-5",
     quantity: 1,
   },
-  {
-    name: "Shiny Glimmora ex",
-    id: "sv4pt5-218",
-    quantity: 1,
-  },
+  // {
+  //   name: "Shiny Glimmora ex",
+  //   id: "sv4pt5-218",
+  //   quantity: 1,
+  // },
   {
     name: "TM: Crisis Punch",
     id: "sv4pt5-90",
@@ -39,11 +39,11 @@ export const ForTrade = [
     id: "sv4-184",
     quantity: 1,
   },
-  {
-    name: "FA Sandy Shocks ex",
-    id: "sv4-228",
-    quantity: 1,
-  },
+  // {
+  //   name: "FA Sandy Shocks ex",
+  //   id: "sv4-228",
+  //   quantity: 1,
+  // },
   {
     name: "Cofagrigus ex",
     id: "sv4-76",
@@ -92,6 +92,6 @@ export const ForTrade = [
   {
     name: "Jet Energy",
     id: "sv2-190",
-    quantity: 3,
+    quantity: 2,
   },
 ];
