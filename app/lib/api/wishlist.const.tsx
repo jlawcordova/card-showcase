@@ -6,11 +6,6 @@ export const Wishlist = [
       "I am actively seeking for these cards. Willing to trade for equal or higher value cards (as per Troll and Toad valuation).",
     content: [
       {
-        name: "Chien-pao ex",
-        id: "sv2-61",
-        quantity: 3,
-      },
-      {
         name: "PokéStop",
         id: "pgo-68",
         quantity: 4,
