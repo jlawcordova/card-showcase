@@ -16,16 +16,6 @@ export const Wishlist = [
         quantity: 1,
       },
       {
-        name: "Bidoof",
-        id: "swsh12pt5-111",
-        quantity: 2,
-      },
-      {
-        name: "Bibarel",
-        id: "swsh9-121",
-        quantity: 1,
-      },
-      {
         name: "PokéStop",
         id: "pgo-68",
         quantity: 2,
@@ -34,36 +24,6 @@ export const Wishlist = [
         name: "Superior Energy Retrieval",
         id: "sv2-189",
         quantity: 3,
-      },
-      {
-        name: "Super Rod",
-        id: "sv2-188",
-        quantity: 2,
-      },
-      {
-        name: "Earthen Vessel",
-        id: "sv4-163",
-        quantity: 1,
-      },
-      {
-        name: "Ultra Ball",
-        id: "sv4pt5-91",
-        quantity: 2,
-      },
-      {
-        name: "Rare Candy",
-        id: "sv4pt5-89",
-        quantity: 3,
-      },
-      {
-        name: "Nest Ball",
-        id: "sv1-181",
-        quantity: 2,
-      },
-      {
-        name: "Iono",
-        id: "sv4pt5-80",
-        quantity: 1,
       },
     ],
   },
@@ -95,32 +55,52 @@ export const Wishlist = [
       },
     ],
   },
-  // {
-  //   id: "3",
-  //   name: "Would Be Happy With",
-  //   description:
-  //     "I am not in a rush for these cards. Open to trading, but priority is on actively sought-after cards.",
-  //   content: [
-  //     {
-  //       name: "Shiny Skwovet",
-  //       id: "sv4pt5-205",
-  //       quantity: 1,
-  //     },
-  //     {
-  //       name: "Radiant Sneasler",
-  //       id: "swsh11-123",
-  //       quantity: 1,
-  //     },
-  //     {
-  //       name: "Shiny Glimmet",
-  //       id: "sv4pt5-179",
-  //       quantity: 4,
-  //     },
-  //     {
-  //       name: "Shiny Squawk",
-  //       id: "sv4pt5-223",
-  //       quantity: 1,
-  //     },
-  //   ],
-  // },
+  {
+    id: "3",
+    name: "Would Be Happy With",
+    description:
+      "I am not in a rush for these cards. Open to trading, but priority is on actively sought-after cards.",
+    content: [
+      {
+        name: "Super Rod",
+        id: "sv2-188",
+        quantity: 2,
+      },
+      {
+        name: "Earthen Vessel",
+        id: "sv4-163",
+        quantity: 1,
+      },
+      {
+        name: "Ultra Ball",
+        id: "sv4pt5-91",
+        quantity: 2,
+      },
+      {
+        name: "Rare Candy",
+        id: "sv4pt5-89",
+        quantity: 3,
+      },
+      {
+        name: "Nest Ball",
+        id: "sv1-181",
+        quantity: 2,
+      },
+      {
+        name: "Iono",
+        id: "sv4pt5-80",
+        quantity: 1,
+      },
+      {
+        name: "Bidoof",
+        id: "swsh12pt5-111",
+        quantity: 2,
+      },
+      {
+        name: "Bibarel",
+        id: "swsh9-121",
+        quantity: 1,
+      },
+    ],
+  },
 ];
