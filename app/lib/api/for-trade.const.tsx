@@ -9,11 +9,16 @@ export const ForTrade = [
     id: "sv4pt5-227",
     quantity: 1,
   },
-  // {
-  //   name: "Shiny Ditto",
-  //   id: "sv4pt5-201",
-  //   quantity: 1,
-  // },
+  {
+    name: "Shiny Espathra ex",
+    id: "sv4pt5-214",
+    quantity: 1,
+  },
+  {
+    name: "Shiny Kingambit",
+    id: "sv4pt5-187",
+    quantity: 1,
+  },
   {
     name: "Toedscruel ex",
     id: "sv4pt5-5",
@@ -30,13 +35,23 @@ export const ForTrade = [
     quantity: 2,
   },
   {
-    name: "Gold Counter Catcher",
-    id: "sv4-264",
+    name: "Moonlit Hill",
+    id: "sv4pt5-81",
     quantity: 1,
   },
+  // {
+  //   name: "Gold Counter Catcher",
+  //   id: "sv4-264",
+  //   quantity: 1,
+  // },
   {
     name: "IR Dottler",
     id: "sv4-184",
+    quantity: 1,
+  },
+  {
+    name: "IR Blitzle",
+    id: "sv4-195",
     quantity: 1,
   },
   // {
@@ -92,6 +107,12 @@ export const ForTrade = [
   {
     name: "Jet Energy",
     id: "sv2-190",
+    quantity: 3,
+  },
+
+  {
+    name: "Judge",
+    id: "swsh8-235",
     quantity: 2,
   },
 ];

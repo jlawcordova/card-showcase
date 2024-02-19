@@ -6,14 +6,64 @@ export const Wishlist = [
       "I am actively seeking for these cards. Willing to trade for equal or higher value cards (as per Troll and Toad valuation).",
     content: [
       {
+        name: "Frigibax Shiny",
+        id: "sv4pt5-128",
+        quantity: 1,
+      },
+      {
+        name: "Frigibax IR",
+        id: "sv2-208",
+        quantity: 1,
+      },
+      {
+        name: "Bidoof",
+        id: "swsh12pt5-111",
+        quantity: 2,
+      },
+      {
+        name: "Bibarel",
+        id: "swsh9-121",
+        quantity: 1,
+      },
+      {
         name: "PokéStop",
         id: "pgo-68",
-        quantity: 4,
+        quantity: 2,
       },
       {
         name: "Superior Energy Retrieval",
         id: "sv2-189",
+        quantity: 3,
+      },
+      {
+        name: "Super Rod",
+        id: "sv2-188",
         quantity: 2,
+      },
+      {
+        name: "Earthen Vessel",
+        id: "sv4-163",
+        quantity: 1,
+      },
+      {
+        name: "Ultra Ball",
+        id: "sv4pt5-91",
+        quantity: 2,
+      },
+      {
+        name: "Rare Candy",
+        id: "sv4pt5-89",
+        quantity: 3,
+      },
+      {
+        name: "Nest Ball",
+        id: "sv1-181",
+        quantity: 2,
+      },
+      {
+        name: "Iono",
+        id: "sv4pt5-80",
+        quantity: 1,
       },
     ],
   },
