@@ -6,24 +6,19 @@ export const Wishlist = [
       "I am actively seeking for these cards. Willing to trade for equal or higher value cards (as per Troll and Toad valuation).",
     content: [
       {
-        name: "Frigibax Shiny",
-        id: "sv4pt5-128",
+        name: "IR Drowzee",
+        id: "sv1-210",
         quantity: 1,
       },
       {
-        name: "Frigibax IR",
-        id: "sv2-208",
+        name: "Unfair Stamp",
+        id: "sv6-165",
         quantity: 1,
       },
       {
-        name: "PokéStop",
-        id: "pgo-68",
-        quantity: 2,
-      },
-      {
-        name: "Superior Energy Retrieval",
-        id: "sv2-189",
-        quantity: 3,
+        name: "Fezandipity ex",
+        id: "sv6pt5-38",
+        quantity: 1,
       },
     ],
   },
@@ -34,23 +29,28 @@ export const Wishlist = [
       "I want to have these cards. Willing to trade for cards of similar value.",
     content: [
       {
-        name: "Squawkabilly ex",
-        id: "sv4pt5-75",
+        name: "Iron Hands ex",
+        id: "sv4-70",
         quantity: 1,
       },
       {
-        name: "Raichu V",
-        id: "swsh9-45",
+        name: "Hyper Aroma",
+        id: "sv6-152",
+        quantity: 1,
+      },
+      {
+        name: "Pokemon League Headquarters",
+        id: "sv3-192",
         quantity: 2,
       },
       {
-        name: "Raikou V",
-        id: "swsh9-48",
+        name: "Pokegear 3.0",
+        id: "sv1-186",
         quantity: 1,
       },
       {
-        name: "Iron Hands ex",
-        id: "sv4-70",
+        name: "IR Baxcalibur",
+        id: "sv2-210",
         quantity: 1,
       },
     ],
@@ -62,43 +62,13 @@ export const Wishlist = [
       "I am not in a rush for these cards. Open to trading, but priority is on actively sought-after cards.",
     content: [
       {
-        name: "Super Rod",
-        id: "sv2-188",
-        quantity: 2,
-      },
-      {
-        name: "Earthen Vessel",
-        id: "sv4-163",
+        name: "IR Bulbasaur",
+        id: "sv3pt5-166",
         quantity: 1,
       },
       {
-        name: "Ultra Ball",
-        id: "sv4pt5-91",
-        quantity: 2,
-      },
-      {
-        name: "Rare Candy",
-        id: "sv4pt5-89",
-        quantity: 3,
-      },
-      {
-        name: "Nest Ball",
-        id: "sv1-181",
-        quantity: 2,
-      },
-      {
-        name: "Iono",
-        id: "sv4pt5-80",
-        quantity: 1,
-      },
-      {
-        name: "Bidoof",
-        id: "swsh12pt5-111",
-        quantity: 2,
-      },
-      {
-        name: "Bibarel",
-        id: "swsh9-121",
+        name: "IR Arctibax",
+        id: "sv2-209",
         quantity: 1,
       },
     ],

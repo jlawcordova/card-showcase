@@ -10,7 +10,7 @@ export default async function Home() {
   const cardSearchParams = new URLSearchParams();
   const q = ForTrade.map((card) => `id:${card.id}`).join(" OR ");
   cardSearchParams.append("q", q);
-  cardSearchParams.append("orderBy", "-set.releaseDate,number");
+  cardSearchParams.append("orderBy", "-set.releaseDate,-number");
 
   const serverCards = await fetch(
     `https://api.pokemontcg.io/v2/cards?${cardSearchParams}`
@@ -25,7 +25,7 @@ export default async function Home() {
     .map((card) => `id:${card.id}`)
     .join(" OR ");
   wishlistParams.append("q", qWishlist);
-  wishlistParams.append("orderBy", "-set.releaseDate,number");
+  wishlistParams.append("orderBy", "-set.releaseDate,-number");
 
   const serverWishlistCards = await fetch(
     `https://api.pokemontcg.io/v2/cards?${wishlistParams}`
