@@ -137,7 +137,7 @@ export const ForTrade = [
   {
     name: "FA Dachsbun ex",
     id: "sv7-160",
-    quantity: 1,
+    quantity: 2,
   },
   {
     name: "Durant ex",
@@ -177,6 +177,11 @@ export const ForTrade = [
   {
     name: "Drasna",
     id: "sv8-231",
+    quantity: 1,
+  },
+  {
+    name: "SIR Latias",
+    id: "sv8-239",
     quantity: 1,
   },
 ];
