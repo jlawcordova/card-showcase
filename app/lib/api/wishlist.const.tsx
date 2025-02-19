@@ -16,8 +16,8 @@ export const Wishlist = [
         quantity: 1,
       },
       {
-        name: "Rowlet",
-        id: "sv3-013",
+        name: "IR Maushold",
+        id: "sv2-226",
         quantity: 1,
       },
     ],
@@ -29,11 +29,6 @@ export const Wishlist = [
       "I want to have these cards. Willing to trade for cards of similar value.",
     content: [
       {
-        name: "IR Maushold",
-        id: "sv2-226",
-        quantity: 1,
-      },
-      {
         name: "Shiny Lechonk",
         id: "sv4pt5-207",
         quantity: 1,
@@ -41,6 +36,11 @@ export const Wishlist = [
       {
         name: "Shiny Tandemaus",
         id: "sv4pt5-209",
+        quantity: 1,
+      },
+      {
+        name: "Rowlet",
+        id: "sv3-013",
         quantity: 1,
       },
       {
