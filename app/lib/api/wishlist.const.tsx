@@ -6,18 +6,18 @@ export const Wishlist = [
       "I am actively seeking for these cards. Willing to trade for equal or higher value cards (as per Troll and Toad valuation).",
     content: [
       {
-        name: "IR Drowzee",
-        id: "sv1-210",
+        name: "IR Baxcalibur",
+        id: "sv2-210",
         quantity: 1,
       },
       {
-        name: "Unfair Stamp",
-        id: "sv6-165",
+        name: "IR Arctibax",
+        id: "sv2-209",
         quantity: 1,
       },
       {
-        name: "Fezandipity ex",
-        id: "sv6pt5-38",
+        name: "Rowlet",
+        id: "sv3-013",
         quantity: 1,
       },
     ],
@@ -29,13 +29,18 @@ export const Wishlist = [
       "I want to have these cards. Willing to trade for cards of similar value.",
     content: [
       {
-        name: "Iron Hands ex",
-        id: "sv4-70",
+        name: "IR Maushold",
+        id: "sv2-226",
         quantity: 1,
       },
       {
-        name: "Hyper Aroma",
-        id: "sv6-152",
+        name: "Shiny Lechonk",
+        id: "sv4pt5-207",
+        quantity: 1,
+      },
+      {
+        name: "Shiny Tandemaus",
+        id: "sv4pt5-209",
         quantity: 1,
       },
       {
@@ -44,13 +49,18 @@ export const Wishlist = [
         quantity: 2,
       },
       {
+        name: "Neutralization Zone",
+        id: "sv8p5-60",
+        quantity: 1,
+      },
+      {
         name: "Pokegear 3.0",
         id: "sv1-186",
         quantity: 1,
       },
       {
-        name: "IR Baxcalibur",
-        id: "sv2-210",
+        name: "IR Wugtrio",
+        id: "sv4pt5-224",
         quantity: 1,
       },
     ],
@@ -62,13 +72,13 @@ export const Wishlist = [
       "I am not in a rush for these cards. Open to trading, but priority is on actively sought-after cards.",
     content: [
       {
-        name: "IR Bulbasaur",
-        id: "sv3pt5-166",
+        name: "SIR Venusaur",
+        id: "sv3pt5-198",
         quantity: 1,
       },
       {
-        name: "IR Arctibax",
-        id: "sv2-209",
+        name: "IR Bulbasaur",
+        id: "sv3pt5-166",
         quantity: 1,
       },
     ],

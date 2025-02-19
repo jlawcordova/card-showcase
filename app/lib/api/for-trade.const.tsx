@@ -30,11 +30,6 @@ export const ForTrade = [
     quantity: 1,
   },
   {
-    name: "FA Falkner",
-    id: "sv2-251",
-    quantity: 1,
-  },
-  {
     name: "Cofagrigus ex",
     id: "sv4-76",
     quantity: 1,
@@ -44,11 +39,11 @@ export const ForTrade = [
     id: "sv4-184",
     quantity: 1,
   },
-  // {
-  //   name: "IR Blitzle",
-  //   id: "sv4-195",
-  //   quantity: 1,
-  // },
+  {
+    name: "IR Blitzle",
+    id: "sv4-195",
+    quantity: 1,
+  },
   {
     name: "Great Tusk ex",
     id: "sv4pt5-53",
@@ -72,16 +67,6 @@ export const ForTrade = [
   {
     name: "Shiny Kingambit",
     id: "sv4pt5-187",
-    quantity: 1,
-  },
-  {
-    name: "Shiny Pidgey",
-    id: "sv4pt5-196",
-    quantity: 1,
-  },
-  {
-    name: "IR Wugtrio",
-    id: "sv4pt5-224",
     quantity: 1,
   },
   {
@@ -115,13 +100,8 @@ export const ForTrade = [
     quantity: 1,
   },
   {
-    name: "FA Explorer's Guidance",
+    name: "FA Farigiraf",
     id: "sv5-194",
-    quantity: 1,
-  },
-  {
-    name: "FA Explorer's Guidance",
-    id: "sv5-200",
     quantity: 1,
   },
   {
@@ -132,11 +112,6 @@ export const ForTrade = [
   {
     name: "Palafin ex",
     id: "sv6-61",
-    quantity: 1,
-  },
-  {
-    name: "Wellspring Mask Ogerpon ex",
-    id: "sv6-64",
     quantity: 1,
   },
   {
