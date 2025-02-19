@@ -40,7 +40,7 @@ export const Wishlist = [
       },
       {
         name: "Rowlet",
-        id: "sv3-013",
+        id: "sv3-13",
         quantity: 1,
       },
       {
